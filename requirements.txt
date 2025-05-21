@@ -1,0 +1,34 @@
+# Original project lint / style tools
+flake8==3.7.9
+yapf==0.29.0
+isort==4.3.21
+
+# Core runtime: CLIP, PyTorch, vision utils
+torch>=1.13
+torchvision>=0.14
+torchaudio>=0.13
+git+https://github.com/openai/CLIP.git
+
+# Image IO
+Pillow>=8.2
+
+# Few-shot / prompt tuning helpers
+pandas>=1.5
+tqdm>=4.64
+ftfy
+regex
+tabulate
+yacs
+future
+scipy
+scikit-learn
+
+# MedMNIST
+medmnist>=2.1
+
+# Wildlife utilities
+wilds==1.2.2
+
+# Misc
+gdown
+tb-nightly

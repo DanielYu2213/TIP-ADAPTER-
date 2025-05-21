@@ -1,0 +1,34 @@
+# ------ Basic Config ------
+dataset: inat21
+root_path: data
+train_csv: data/inat21/train_k8.csv
+test_csv: data/inat21/test.csv
+prompt_path:  # leave blank to skip prompt tuning
+
+backbone: ViT-B/32
+shots: 8
+
+# ------ Load Cache and Features ------
+load_cache: false
+load_pre_feat: false
+
+# ------ Hyperparameters ------
+init_alpha: 1
+init_beta: 1
+
+# If you want to search optimal hyperparameters, enable the following:
+# search_hp: true
+# search_scale: [12, 5]
+# search_step: [200, 20]
+
+# ------ Training ------
+augment_epoch: 5
+# train_epoch: 20  # Optional: add if the training stage is used
+
+# ------ Caching ------
+cache_dir: ./caches/inat21
+
+search_hp: True
+search_scale: [100, 100]
+search_step: [20, 20]
+
